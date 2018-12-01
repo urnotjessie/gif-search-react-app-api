@@ -5,6 +5,8 @@ ruby '2.3.3'
 
 gem 'dotenv-rails'
 gem 'rest-client'
+
+gem 'foreman', '~> 0.82.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
