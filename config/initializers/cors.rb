@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins ['localhost:3000', 'https://desolate-inlet-45447.herokuapp.com']
+    origins ['localhost:3000', 'https://gif-search-react-app.herokuapp.com']
 
     resource '*',
       headers: :any,
