@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   get 'api/trending/:id', to: 'gifs_trending#show'
   get 'api/trending', to: 'gifs_trending#index'
 
+  namespace :api do
+    resource :favorite
+  end
+
 end
