@@ -1,6 +1,13 @@
-class GifsFivorateController < ApplicationController
+class GifsFavoriteController < ApplicationController
 
   def create
+    gif = Gif.new(gif_params)
+
+    if gif.save
+      render json: gif
+    else
+      render json: {message: gif.errors}, status: 400
+    end
   end
 
   private
