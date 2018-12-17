@@ -1,5 +1,9 @@
 class GifsFavoriteController < ApplicationController
 
+  def index
+    render json: Gif.all
+  end
+
   def create
     gif = Gif.new(gif_params)
 
