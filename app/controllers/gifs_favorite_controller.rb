@@ -16,6 +16,6 @@ class GifsFavoriteController < ApplicationController
 
   private
     def gif_params
-      # params.require(:query).permit(:query)
+      params.require(:gif).permit(:source, :images, :title)
     end
 end
